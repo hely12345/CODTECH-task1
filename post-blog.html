@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Arsenal+SC:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+    <title>Post a Blog - HolaWorld</title>
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <h1 class="l-txt"><span>Hola</span>World</h1>
+        </div>
+        <button class="menu-toggle"><img src="images/menu.png" alt="menu" width="20" height="20"></button>
+        <nav class="nav">
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="login.html">Login</a></li>
+                <li>
+                    <a href="#">Hola World</a>
+                    <ul class="submenu">
+                        <li><a class="logout" href="#">Logout</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="content clearfix">
+        <div class="main-content blog-content">
+            <h1 class="recent">Post a New Blog</h1>
+            <form action="submit-blog.php" method="post" enctype="multipart/form-data" class="post-blog-form">
+                <div class="form-group">
+                    <label for="blog-title">Blog Title:</label>
+                    <input type="text" id="blog-title" name="blog-title" class="text-input" required>
+                </div>
+                <div class="form-group">
+                    <label for="blog-content">Blog Content:</label>
+                    <textarea id="blog-content" name="blog-content" rows="10" class="text-input" required></textarea>
+                </div>
+                <div class="form-group">
+                    <label for="blog-image">Upload Image (optional):</label>
+                    <input type="file" id="blog-image" name="blog-image" accept="image/*">
+                </div>
+                <div class="form-group">
+                    <button type="submit" class="btn btn-big">Post Blog</button>
+                </div>
+            </form>
+        </div>
+        
+        <div class="sidebar writing-tips">
+            <div class="section topic">
+                <h2 class="section-title">Writing Tips</h2>
+                <ul>
+                    <li>Keep your audience in mind</li>
+                    <li>Use clear and concise language</li>
+                    <li>Include relevant images</li>
+                    <li>Proofread before posting</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        <div class="footer-content">
+            <div class="footer-section about">
+                <h1 class="logo-txt">
+                    HolaWorld
+                </h1>
+                <p>Welcome to HolaWorld, your source for insightful articles and stories on technology, lifestyle,
+                    travel, and more. Join us to explore, learn, and enjoy. Happy reading!</p>
+                <div class="contact">
+                    <span><img src="images/phone.png" alt="">
+                        &nbsp;
+                        0123456789 <br>
+                        <i class="fa fa-envelope"></i>&nbsp;
+                        hola.world@gmail.com
+                    </span>
+                </div>
+                <div class="social">
+                    <a href="#"><img src="images/twitter.png"></a>&nbsp;
+                    <a href="#"><img src="images/facebook.png"></a>&nbsp;
+                    <a href="#"><img src="images/insta.png"></a>
+                </div>
+            </div>
+            <div class="footer-section links">
+                <h1>Quick Links</h1>
+                <br>
+                <ul>
+                    <a href="">Team</a><br>
+                    <a href="">Events</a><br>
+                    <a href="">Gallery</a><br>
+                    <a href="">Terms and Conditions</a>
+                </ul>
+            </div>
+            <div class="footer-section contact-form">
+                <h1>Contact Us</h1>
+                <form action="home.html">
+                    <input type="email" name="email" class="txt-input contact-input" placeholder="Your Email Id"><br>
+                    <textarea name="message" rows="3" class="txt-input contact-input"
+                        placeholder="Your Message"></textarea>
+                    <br>
+                    <button type="submit" class="btn btn-big">Send</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <script src="scriptt.js"></script>
+</body>
+
+</html>
